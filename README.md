@@ -14,10 +14,15 @@
 * pip install -r requirements.txt
 
 ### 2、安装allure
-* sudo apt-add-repository ppa:qameta/allure
-* sudo apt-get update 
-* sudo apt-get install allure
-* 其他安装方式：https://github.com/allure-framework/allure2
+* 源安装
+    * sudo apt-add-repository ppa:qameta/allure
+    * sudo apt-get update 
+    * sudo apt-get install allure
+    * 其他安装方式：https://github.com/allure-framework/allure2
+* 手动安装
+    * 下载2.4.1版本:https://github.com/allure-framework/allure2/releases
+    * 解压allure-2.4.1.zip
+    * 加入系统环境变量:export PATH=/home/john/allure-2.4.1/bin:$PATH
 
 ### 3、安装openjdk8
 * sudo add-apt-repository ppa:openjdk-r/ppa
