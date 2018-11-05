@@ -1,4 +1,4 @@
-![avatar](https://github.com/yanchunhuo/resources/blob/master/APIAutomationTest/report.png)
+![avatar](https://github.com/yanchunhuo/resources/blob/master/APIAutomationTest/report.png=360x490)
 
 # [API自动化测试]()
 
