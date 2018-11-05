@@ -1,4 +1,4 @@
-![avatar](<img width="360" height="490" src="https://github.com/yanchunhuo/resources/blob/master/APIAutomationTest/report.png" />)
+![image](https://github.com/yanchunhuo/resources/blob/master/APIAutomationTest/report.png = 250x250)
 
 # [API自动化测试]()
 
