@@ -77,4 +77,5 @@ class DoRequest(object):
         self._session.cookies.clear()
 
     def closeSession(self):
+        self._session.cookies.clear()
         self._session.close()
