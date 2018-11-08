@@ -1,7 +1,6 @@
 #-*- coding:utf8 -*-
 import requests
 from pojo.httpResponseResult import HttpResponseResult
-import os
 
 class DoRequest(object):
     def __init__(self,url,encoding='utf-8'):
@@ -31,8 +30,8 @@ class DoRequest(object):
         return self._dealResponseResult(r)
 
 
-    def post_with_file(self,path,filePath,params=None):
-        files = {os.path.split(filePath)[-1]: open(filePath, 'rb')}
+    def post_with_file(self,path,filePath,params=None,fileKey='file'):
+        files = {fileKey: open(filePath, 'rb')}
         r = self._session.post(self._url+path, data=params, files=files,headers=self._headers, cookies=self._cookies,
                           timeout=self._timeout,proxies=self._proxies)
         return self._dealResponseResult(r)
