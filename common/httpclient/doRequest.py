@@ -13,16 +13,16 @@ class DoRequest(object):
         self._session=requests.session()
 
     def setHeaders(self,headers):
-        self._headers.update(headers)
+        self._headers=headers
 
     def setCookies(self,cookies):
-        self._cookies.update(cookies)
+        self._cookies=cookies
 
     def setTimeout(self,seconds):
         self._timeout=seconds
 
     def setProxies(self,proxies):
-        self._proxies.update(proxies)
+        self._proxies=proxies
 
     def post_with_form(self,path,params=None):
         r=self._session.post(self._url+path,data=params,headers=self._headers,cookies=self._cookies,timeout=self._timeout,
@@ -53,8 +53,8 @@ class DoRequest(object):
                        proxies=self._proxies)
         httpResponseResult=HttpResponseResult()
         httpResponseResult.status_code=r.status_code
-        httpResponseResult.headers=r.headers.__str__()
-        httpResponseResult.cookies=r.cookies.__str__()
+        httpResponseResult.headers=self._session.headers.__str__()
+        httpResponseResult.cookies=self._session.cookies.__str__()
         with open(storeFilePath,"wb") as f:
             f.write(r.content)
         return httpResponseResult
@@ -73,9 +73,5 @@ class DoRequest(object):
         httpResponseResult.body=r.content
         return httpResponseResult
 
-    def clearCookies(self):
-        self._session.cookies.clear()
-
     def closeSession(self):
-        self.clearCookies()
         self._session.close()
