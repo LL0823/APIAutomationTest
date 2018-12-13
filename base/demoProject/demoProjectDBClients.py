@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 from base.demoProject.demoProjectReadConfig import DemoProjectReadConfig
-from common.mysqlclient.mysqlclient import MysqlClient
+
+
 class DemoProjectDBClients(object):
     __instance=None
     __inited=None

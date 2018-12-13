@@ -2,7 +2,7 @@
 import re
 import uuid
 import json
-class StrTool():
+class StrTool:
 
     @classmethod
     def getStringWithLBRB(cls, sourceStr, lbStr, rbStr, offset=0):

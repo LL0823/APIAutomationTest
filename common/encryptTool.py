@@ -1,7 +1,7 @@
 #-*- coding:utf8 -*-
 import hashlib
 import base64
-class EncryptTool():
+class EncryptTool:
 
     @classmethod
     def md5Encode(cls,str):

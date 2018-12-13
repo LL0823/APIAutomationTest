@@ -1,6 +1,5 @@
 #-*- coding:utf8 -*-
-import ConfigParser
-class DemoProjectConfig():
+class DemoProjectConfig:
     def __init__(self):
         self.url=None
         self.adminUser=None

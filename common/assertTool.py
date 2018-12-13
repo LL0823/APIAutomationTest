@@ -3,7 +3,7 @@ import re
 import filecmp
 import os
 
-class AssertTool():
+class AssertTool:
     @classmethod
     def isRegularMatch(cls,sourceStr,regularStr):
         """
@@ -34,8 +34,8 @@ class AssertTool():
     def isFilesSizeEqual(cls,filePath1,filePath2):
         """
         比较两个文件大小是否一致
+        :param filePath2:
         :param filePath1:
-        :param filePaht2:
         :return:
         """
         size1=os.path.getsize(filePath1)

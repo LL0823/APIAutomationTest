@@ -3,7 +3,7 @@ from assertpy import assert_that
 from base.demoProject.demoProjectClient import DemoProjectClient
 import pytest
 
-class TestLogin():
+class TestLogin:
 
     def setup_class(self):
         self._demoProjectClient=DemoProjectClient()

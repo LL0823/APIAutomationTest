@@ -2,7 +2,7 @@
 
 import pymysql
 
-class MysqlClient():
+class MysqlClient:
     def __init__(self,host,port,username,password,dbname,charset='utf8'):
         self._conn=pymysql.connect(host=host,port=int(port),user=username,passwd=password,db=dbname,charset=charset)
         self._cursor=self._conn.cursor()

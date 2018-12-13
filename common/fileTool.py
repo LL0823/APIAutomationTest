@@ -1,6 +1,6 @@
 #!-*- coding:utf8 -*-
 import json
-class FileTool():
+class FileTool:
 
     @classmethod
     def writeObjectIntoFile(cls,obj,filePath):

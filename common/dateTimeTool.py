@@ -2,7 +2,7 @@
 import datetime
 import time
 
-class DateTimeTool():
+class DateTimeTool:
     @classmethod
     def getNowTime(cls,format='%Y-%m-%d %H:%M:%S'):
         return datetime.datetime.now().strftime(format)
